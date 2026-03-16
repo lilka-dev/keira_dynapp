@@ -19,36 +19,9 @@ You need the **Xtensa ESP32-S3 GCC toolchain**. If you have PlatformIO installed
 ~/.platformio/packages/toolchain-xtensa-esp32s3/bin/
 ```
 
-### Option A: Make
-
-```bash
-cd examples/dynapp_demo
-make
-```
-
-This produces `demo.so`.
-
-If your toolchain is in a different location:
-
-```bash
-make TOOLCHAIN_PATH=/path/to/xtensa-toolchain/bin
-```
-
-If the toolchain is already in your `PATH`:
-
-```bash
-make TOOLCHAIN_PATH=
-```
-
-#### Inspect
-
-```bash
-make info
-```
-
 Shows section layout, symbol table, and total size.
 
-### Option B: CMake
+### Compilation
 
 ```bash
 cd examples/dynapp_demo

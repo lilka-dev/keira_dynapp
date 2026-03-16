@@ -24,10 +24,7 @@ Shows section layout, symbol table, and total size.
 ### Compilation
 
 ```bash
-cd examples/dynapp_demo
-mkdir build && cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../xtensa-esp32s3.cmake ..
-make
+cmake . && make
 ```
 
 This produces `build/demo.so`.
